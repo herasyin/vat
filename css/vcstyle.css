@@ -1,0 +1,120 @@
+/* button and animation */
+button {
+	animation: pushup 0.1s forwards ease-in-out;
+	cursor: pointer;
+	font-family: Fixedsys, serif;
+	font-size: 12pt;
+	padding: 6px;
+	color: white;
+	border: none;
+	margin-left: 20px;
+}
+@keyframes pushup {
+	from {background-color: #ff0072;}
+	to {background-color: #0072ff;}
+}
+button:hover {
+	animation: push 0.2s 1 forwards ease-in-out;
+}
+@keyframes push {
+	0% {transform:translate(0px, 0px);background-color: #0072ff;}
+	10% {transform:translate(-1px, 1px);background-color: #0072ff;}
+	25% {transform:translate(1px, -1px);background-color: #ff0072;}
+	40% {transform:translate(1px, 1px);background-color: #ff0072;}
+	55% {transform:translate(-1px, -1px);background-color: #0072ff;}
+	70% {transform:translate(-1px, 1px);background-color: #0072ff;}
+	85% {transform:translate(1px, -1px);background-color: #ff0072;}
+	100% {transform:translate(0px, 0px);background-color: #ff0072;}
+}
+
+/* add vs ext */
+#entryform {
+	height: 50px;
+	padding-top: 25px;
+	display: flex;
+	align-items: stretch;
+}
+.intrate + label {
+	cursor: pointer;
+}
+#taxrate {
+    width: 55px;
+    text-align: center;
+}
+
+/* выравниваем это говно по центру */
+.intratemark {
+	line-height	: 50px;
+}
+
+/* hide old button */
+.intrate:not(checked) {
+	position: absolute;
+	opacity: 0;
+}
+
+/*nonactive button */
+.intrate:not(checked) + label {
+	position: relative;
+	background-color: black;
+	padding: 0 10px 0 10px;
+}
+
+/* active button*/
+.intrate:checked + label {
+	background-color: #ff0072;
+}
+
+/* result table*/
+#resulttable {
+    min-width: 453px;
+    margin-top: 20px;
+    border-spacing: 0px;
+    display: none;
+}
+.namezzz td {
+    padding: 5px 5px 5px 20px;
+    background-color: #0a0a0a;
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px crimson;
+}
+.valuezzz td {
+    padding: 5px 5px 5px 20px;
+    text-align: right;
+}
+
+/* print version */
+#printtable {
+    min-width: 453px;
+    margin-top: 20px;
+    border-spacing: 0px;
+    display: none;
+}
+#printme {
+    margin-top: 10px;
+    text-align: right;
+    width: 453;
+    display: none;
+}
+@media print {
+    content {
+        display: block;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+        margin-left: 50px;
+        border-left: 2px dotted #474747;}
+        body {background:#FFF; color:#474747;}
+        .noprint {display: none;}
+        .namezzz td {
+            background-color: #fafafa;
+            text-shadow: none;
+        }
+        #printtable {
+        	min-width: 100%;
+        	display: table;
+        }
+}

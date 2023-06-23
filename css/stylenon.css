@@ -1,0 +1,247 @@
+@font-face {
+	font-family: Fixedsys;
+	src: url(fonts/FSEX300.ttf);
+}
+@font-face {
+	font-family: Abscure;
+	src: url(fonts/Abscure.otf);
+}
+
+body {
+	font-family: Fixedsys, serif;
+	font-size: 12pt;
+	background-color: black;
+	color: white;
+	margin: 0px;
+}
+input {
+	font-family: Fixedsys, serif;
+	font-size: 12pt;
+	padding: 6px;
+	color: green;
+	border: none;
+	text-align: left;
+}
+
+content {
+	display: block;
+}
+
+.staff {
+	display: table;
+	padding-top: 50px;
+	padding-left: 100px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	margin-left:100px;
+	border-left: 2px solid white;
+}
+p {
+	margin: 10px 0px;
+}
+/* head hat & logo */
+#hat {
+	display: table;
+	min-height: 13%;
+}
+
+#logoblock {
+	display: block;
+	margin: 50px 0 30px 100px;
+}
+#logoblock a {
+	color: inherit;
+    text-decoration: none;
+}
+
+#logotitle {
+	color: hsla(0,0%,100%,0.3);
+	line-height: 100%;
+	font-size: 19.9pt;
+	font-weight: normal;
+	font-family: Abscure, serif;
+}
+#theasylum {
+	animation: neonlogo 0.66s forwards ease-in-out 0.66s, neonlogodrop 6.66s forwards ease-in-out 3s;
+}
+/*#theasylum:hover {
+	animation: glitch 0.23s forwards ease-in-out;
+}*/
+#the {
+	animation: neonlogo 0.33s forwards ease-in-out 0.99s, neonlogodrop 3.00s forwards ease-in-out 6.66s;
+}
+#logotitle:hover #the, #logotitle:hover #theasylum {
+	cursor: url(cur/fuckyou.png) 9 1, url(cur/fuckyou.cur) 9 1, pointer;
+	animation: glitch 0.23s forwards ease-in-out;
+}
+@keyframes neonlogo {
+	0% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	10% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+	20% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	30% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+	40% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	60% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	70% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+	80% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	100% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+}
+@keyframes neonlogodrop {
+	0% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	1% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+	2% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	3% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+	4% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	94% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	95% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+	96% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	97% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	98% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+	99% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+	100% {color: hsla(0,0%,100%,0.3);text-shadow: 0px 0px 0px black;}
+}
+@keyframes glitch {
+	0% {text-shadow: 3px 0px 0px crimson;}
+	10% {text-shadow: -5px 0px 0px darkcyan;}
+	20% {text-shadow: 5px 0px 0px crimson;}
+	30% {text-shadow: -3px 0px 0px darkcyan;}
+	40% {text-shadow: 2px 0px 0px crimson;}
+	50% {text-shadow: -1px 0px 0px darkcyan;}
+	60% {text-shadow: 15px 0px 0px crimson;}
+	70% {text-shadow: -10px 0px 0px darkcyan;}
+	80% {text-shadow: 5px 0px 0px crimson;}
+	90% {text-shadow: -2px 0px 0px darkcyan;}
+	100% {color: hsla(0,0%,100%,1.0);text-shadow: 0px 0px 5px #e6e6e6, 0px 0px 13px #ebebeb;}
+}
+
+.logo {
+	opacity: 0.3;
+	width: 33px;
+	margin: 0 0 3px 59px;
+	animation: neonsign 0.66s forwards ease-in-out 0.66s, neonsigndrop 13s infinite cubic-bezier(0, 1, 1, 0) 3s;
+}
+@keyframes neonsign {
+	0% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+	}
+	10% {
+		opacity: 0.3;
+		filter: drop-shadow(0px 0px 0px black);}
+	20% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+	}
+	30% {
+		opacity: 0.3;
+		filter: drop-shadow(0px 0px 0px black);}
+	40% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+	}
+	100% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+
+	}
+}
+@keyframes neonsigndrop {
+	0% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+	}
+	1% {
+		opacity: 0.3;
+		filter: drop-shadow(0px 0px 0px black);}
+	2% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+	}
+	3% {
+		opacity: 0.3;
+		filter: drop-shadow(0px 0px 0px black);}
+	4% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+	}
+	99% {
+		opacity: 1.0;
+		-webkit-filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+		filter: drop-shadow(0px 0px 5px #a62828) drop-shadow(0px 0px 13px #9c2727);
+	}
+	100% {
+		opacity: 0.3;
+		filter: drop-shadow(0px 0px 0px black);
+	}
+}
+
+
+footer {
+	display: block;
+	width: 100%;
+	min-height: 13%;
+}
+
+/* h1 design */
+
+h1 {
+	line-height:100%;
+	font-size: 30pt;
+	font-weight: normal;
+	font-family: Fixedsys, serif;
+}
+
+#contact {
+	margin: 30px 0 0 100px;
+	display: block;
+	text-align: left;
+}
+
+#contactlink {
+
+	color: hsla(0,0%,100%,0.3);
+	line-height: 0.80;
+	text-decoration: none;
+	font-size: 19.9pt;
+	font-family: Abscure, serif;
+	animation: neonlogo 0.66s reverse ease-in-out;
+}
+#contactlink:hover {
+	color: mistyrose;
+	animation: glitch 0.23s forwards ease-in-out;
+}
+.bottimg {
+	width: 36px;
+	margin-left: 41px;
+	opacity: 0.3;
+	cursor: url(cur/hand.png) 11 11, url(cur/hand.cur) 11 11, pointer;
+}
+#imgrun {
+	width: 36px;
+	margin-bottom: 5px;
+	animation: rotate 1.00s infinite linear;
+	animation-play-state:paused;
+}
+#imgrun:hover {
+	animation-play-state:running;
+}
+@keyframes rotate {
+ from {transform:rotate(-360deg);}
+ to {transform:rotate(0deg);}
+}
+.bottimg:hover {
+	animation: neonsign 0.66s forwards ease-in-out, neonsigndrop 13s infinite cubic-bezier(0, 1, 1, 0) 0.66s;
+}
+@keyframes rotatereverse {
+ from {transform:rotate(360deg);}
+ to {transform:rotate(0deg);}
+}
+
+/* THE END ∞
+

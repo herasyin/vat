@@ -1,0 +1,40 @@
+/*whatsupbitch?*/
+#say {
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+#hi {
+	animation: badwriter 2.2s steps(17, end) 1.0s forwards,
+			   delete 0.8s steps(17, end) 3.7s forwards,
+			   writeragain 1.3s steps(10, end) 5.0s forwards,
+			   deleteagain 0.1s steps(2, end) 6.3s forwards,
+			   writernyan 0.7s steps(6, end) 6.4s forwards;
+}
+@keyframes badwriter {
+	100% {transform: translateY(-340px);}
+}
+@keyframes delete {
+	0% {transform: translateY(-340px);}
+	100% {transform: translateY(-680px);}
+}
+@keyframes writeragain {
+	0% {transform: translateY(-680px);}
+	100% {transform: translateY(-880px);}
+}
+@keyframes deleteagain {
+	0% {transform: translateY(-880px);}
+	100% {transform: translateY(-920px);}
+}
+@keyframes writernyan {
+	0% {transform: translateY(-920px);}
+	100% {transform: translateY(-1040px);}
+}
+#pipe {
+	animation: blink 0.6s infinite ease-in-out alternate-reverse;
+}
+@keyframes blink {
+	from {filter: alpha(Opacity=100); opacity: 1;}
+	to {filter: alpha(Opacity=0); opacity: 0;}
+}

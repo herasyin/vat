@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/stylenon.css">
+    <link rel="stylesheet" type="text/css" href="css/vcstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/sayhi.css">
+    <style media="print" type="text/css">
+</style>
+<script async src="vcjs.js" type="text/javascript"></script>
+<title>handy VAT calc</title>
+</head>
+<body>
+    <div id="hat">
+        <div id="logoblock">
+            <div class="bottimg">
+                <img src="img/Untitled-2.svg" title="spin me right 'round, baby, right 'round" id="imgrun">
+            </div>
+        </div>
+    </div>
+    <content>
+        <div class="staff">
+            <span class="noprint">
+                <h1>Handy value added tax calculator</h1>
+                <div id="entryform">
+                    <input title="enter your value" id="playernum" type="number" name="rhino" placeholder="Total" autofocus required>
+                    <input id="iruno" class="intrate" type="radio" name="rate">
+                    <label title="add VAT" for="iruno" onclick="onsubtotal();"><span class="intratemark">add</span></label>
+                    <input id="irdos" class="intrate" type="radio" name="rate" checked>
+                    <label title="extract VAT" for="irdos" onclick="ontotal();"><span class="intratemark">ext</span></label>
+                    <input title="tax rate" id="taxrate" value="20" onblur="precent()">
+                    <button id="butt" title="you can press ENTER instead of this button" onclick="countthis();">Count<br/>up</button>
+                </div>
+                <table id="resulttable">
+                    <tr class="namezzz"><td>#</td><td>Subtotal</td><td>Rate</td><td>Tax<br></td><td>Total<br></td></tr>
+                    <tbody id="putithere"></tbody>
+                </table>
+            </span> 
+            <table id="printtable" class="print">
+                <tr class="namezzz"><td>#</td><td>Subtotal</td><td>Rate</td><td>Tax<br></td><td>Total<br></td></tr>
+                <tbody id="putithereprint"></tbody>
+            </table>
+            <span class="noprint"><span id="printme"><a href="javascript:window.print(); void 0;">PRINT</a></span></span>
+        </div>
+    </content>
+    <footer>
+
+        <div id="contact">
+
+        </div>
+
+    </footer>
+</body>
+</html>
